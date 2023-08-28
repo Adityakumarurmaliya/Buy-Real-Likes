@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AlwaysViral</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        p {
+            margin: 0 0;
+        }
+
+        a {
+            color: #f36233;
+            transition: all 0.3s ease 0s;
+            text-decoration: none !important;
+            outline: none !important;
+        }
+
+        a:active,
+        a:hover {
+            text-decoration: none;
+            outline: 0 none;
+            color: #242526;
+        }
+
+        ul {
+            list-style: outside none none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ::-moz-selection {
+            background: #f36233;
+            text-shadow: none;
+            color: #ffffff;
+        }
+
+        ::selection {
+            background: #f36233;
+            text-shadow: none;
+            color: #ffffff;
+        }
+
+
+        .pt-90 {
+            padding-top: 40px !important;
+        }
+
+
+
+        /* ------------------------------------
+  02. Global CSS
+  ---------------------------------------*/
+        .readon {
+            position: relative;
+            display: inline-block !important;
+            background: #7696db;
+            padding: 10px 25px;
+            line-height: normal;
+            color: #ffffff !important;
+            transition: all 0.3s ease 0s;
+            border-radius: 30px;
+            text-transform: capitalize !important;
+            cursor: pointer;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+            -ms-box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .readon:hover,
+        .readon:focus {
+            background: #242526;
+        }
+
+        .inner {
+            width: 100%;
+            float: left;
+            position: relative;
+        }
+
+
+
+        .pricingTable .holder {
+            background: #fff;
+            box-shadow: 1px 20px 12px -15px rgba(0, 0, 0, 0.2);
+            padding: 40px 15px;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: 0.5s ease;
+        }
+
+        .pricingTable .holder:hover {
+            transform: translateY(-5px);
+
+        }
+
+
+
+        .pricingTable .holder .hdng p {
+            font-size: 28px;
+            font-weight: bold;
+            color: #242526;
+        }
+
+        .pricingTable .holder .img img {
+            width: 70%;
+        }
+
+        .pricingTable .holder .price p {
+            color: #f36233;
+            margin-bottom: 25px;
+        }
+
+        .pricingTable .holder .price p b {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .pricingTable .holder .price p span {
+            font-size: 18px;
+        }
+
+        .pricingTable .holder .info p {
+            margin-bottom: 15px;
+            color: #242526;
+            font-weight: 14px;
+        }
+
+        /* .pricingTable .holder.active{
+      background:#f36233;
+  } */
+
+        .pricingTable .holder.active .hdng p,
+        .pricingTable .holder.active .price p,
+        .pricingTable .holder.active .info p {
+            color: #242526;
+            ;
+        }
+
+        .pricingTable .holder.active .readon {
+            background: #000000;
+            color: #ffffff !important;
+        }
+
+        .pricingTable .holder.active .readon:hover {
+            background: #4591b4;
+            color: #fff !important;
+        }
+
+        .pricingTable .tabsBtnHolder ul {
+            float: left;
+            display: block;
+            width: 100%;
+            max-width: 326px;
+            border-radius: 1.6666666667rem;
+            margin: 0px auto;
+            margin-bottom: 40px;
+            /* background:#f36233; */
+            text-align: center;
+            position: relative;
+        }
+
+        .pricingTable .tabsBtnHolder ul li {
+            width: calc(100% / 2);
+            display: inline-block;
+            transition: 0.4s ease;
+            float: left;
+        }
+
+        .pricingTable .tabsBtnHolder ul li p {
+            color: #fff;
+            padding: 10px 15px;
+            z-index: 10;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .pricingTable .tabsBtnHolder ul li p.active {
+            color: #f36233;
+        }
+
+        .pricingTable .tabsBtnHolder ul li.indicator {
+            position: absolute;
+            top: 50%;
+            left: 2px;
+            /*163px*/
+            background: #fff;
+            height: calc(100% - 4px);
+            transform: translateY(-50%);
+            border-radius: 1.5333333333rem;
+            width: 161px;
+            z-index: 9
+        }
+
+        /* end */
+        .search {
+            margin-bottom: auto;
+            height: 70px;
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        .search-input {
+
+            color: white;
+            border: 0;
+            outline: 0;
+            background: none;
+            width: 0;
+            line-height: 40px;
+            transition: width 0.4s linear;
+
+        }
+
+        .search .search-input {
+            padding: 0 10px;
+            width: 250px;
+            caret-color: #000000;
+            font-size: 21px;
+            font-weight: 300;
+            color: black;
+            font-size: 17px;
+            text-transform: capitalize;
+            transition: width 0.4s linear;
+        }
+
+        .search:hover>.search-icon {
+            background: #6e2323;
+            color: #fff;
+        }
+
+        .search-icon {
+
+            height: 50px;
+            width: 50px;
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #d20808;
+
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        .navbar-nav li:hover>ul.dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu>.dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+        }
+
+        /* rotate caret on hover */
+        .dropdown-menu>li>a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+
+        ul .dropdown-menu .show {
+            display: none;
+        }
+
+        .price:hover {
+            transform: scale(0.9);
+            transition: all 0.3s;
+        }
+
+        .search {
+            margin-bottom: auto;
+            height: 70px;
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        .search-input {
+
+            color: white;
+            border: 0;
+            outline: 0;
+            background: none;
+            width: 0;
+            line-height: 40px;
+            transition: width 0.4s linear;
+
+        }
+
+        .search .search-input {
+            padding: 0 10px;
+            width: 250px;
+            caret-color: #000000;
+            font-size: 21px;
+            font-weight: 300;
+            color: black;
+            font-size: 17px;
+            text-transform: capitalize;
+            transition: width 0.4s linear;
+        }
+
+        .search:hover>.search-icon {
+            background: #6e2323;
+            color: #fff;
+        }
+
+        .search-icon {
+
+            height: 50px;
+            width: 50px;
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #d20808;
+
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        .navbar-nav li:hover>ul.dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu>.dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+        }
+
+        /* rotate caret on hover */
+        .dropdown-menu>li>a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+
+        ul .dropdown-menu .show {
+            display: none;
+        }
+
+        .price-item:hover {
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+
+        .price:hover {
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+
+        @media (min-width: 768px) {
+            .custom_nav_menu {
+                display: unset !important;
+            }
+
+            .custom_nav_ul {
+                display: unset !important;
+            }
+
+            .custom_nav_ul li {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+    <!-- navbar-start -->
+    <div class="container">
+        <!-- Navbar Start -->
+        <nav class="navbar-expand-lg bg-white navbar-light sticky-top mt-4 float-start col-lg-12 col-md-12 col-xs-6">
+            <a href="index.html" class="navbar-brand">
+                <img src="./img/AlwaysViral-india-logo.png" alt="" width="210" style="width: 210px;">
+            </a>
+            <div class="d-flex justify-content-center h-100 d-none d-md-block float-end">
+                <div class="search">
+                    <input type="text" class="search-input" placeholder="search..." name="">
+                    <a href="#" class="search-icon">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+        <nav class="navbar-expand-md navbar-expand-lg navbar-light mt-4 float-end">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar">Menu</span>
+            </button>
+            <div class="collapse navbar-collapse custom_nav_menu" id="navbarNavDropdown">
+                <ul class="navbar-nav custom_nav_ul">
+                    <li class="nav-item dropdown custom_nav_li">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Facebook </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Buy Facebook Likes</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Facebook Followers</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Facebook Views</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Facebook Post Like</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Facebook Page Review</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Facebook Comments</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Facebook Shares</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Youtube </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Buy Youtube Likes</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Youtube Views</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Youtube Subscribers</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Youtube Short Likes</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Youtube Short Views</a></li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Youtube
+                                    Comments</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Youtube Comments</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Youtube Random Comments</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Indian Youtube Comments</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Instagram</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Instagram
+                                    Likes</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li class="dropdown-submenu"><a class="dropdown-item" href="#">Buy Real Instagram
+                                            Likes</a></li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item" href="#">Buy IGTV Likes</a>
+                                    </li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item" href="#">Buy Instagram Likes
+                                            (INDIAN)</a></li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item" href="#">Buy Instagram Reel
+                                            Likes</a></li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item" href="#">Buy AARAB Instagram
+                                            Likes</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Instagram
+                                    Followers</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Buy Real Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Australia Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy ARAB Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Dubai Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Middle East Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Saudi Arabia Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy UAE Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Italy Instagram Followers</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Instagram
+                                    Auto Like,<br>Comments,Views</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Auto Likes</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Auto Comments</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Auto Views</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Instagram
+                                    Real Views</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Live Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram IGTV Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Reel Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Story Views</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Instagram
+                                    Comments</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Comments</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy IGTV Comments</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Verified Comments</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Custom Comments (INDIAN)</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Reel Comments</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"> Linkedin </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Buy Linkedin Followers</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Linkedin Likes</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Facebook Views</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Linkedin Connections</a></li>
+                            <li><a class="dropdown-item" href="#">Buy LinkedIn Endorsements</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Linkedin Views</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Linkedin Post Shares</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Linkedin Employees</a></li>
+                            <li><a class="dropdown-item" href="#">Buy LinkedIn Comments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Pinterest </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Buy Pinterest Likes</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Pinterest Followers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"> Tiktok</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Buy Tiktok Likes</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Tiktok Followers</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Tiktok Views</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Tiktok Commnets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"> Twitter </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Buy Twitter Likes</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Twitter Followers</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Twitter Views</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Twitter Impression</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"> Buy Google Reviews </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"> More Services </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Twitch</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Twitch Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Twitch Views</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Trust
+                                    Piolet Reviews</a>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"
+                                    aria-expanded="false  href=" #">Tumblr</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Tumblr Likes</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Tumblr Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Tumblr Reblog</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Spotify</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Spotify Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Spotify Plays</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Spotify Playlist Plays</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Monthly Listners</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Sound
+                                    Cloud</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Sound Cloud Likes</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Sound cloud Plays</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">MXTAKATAk</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy MX Takatak Likes</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy MX Takatak Followers</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">IMDB</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy IMDB Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy IMDB Reviews</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy IMDB Votes</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Club
+                                    House</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Club House Room Visitors</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Club House Club Followers</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Vimeo </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Buy Vimeo Likes</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Vimeo Followers</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Vimeo Views</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"> Account</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Log In</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><i
+                                class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 style="text-align: center; color: rgb(250, 135, 135);">Buy TikTok Likes</h1>
+        <h3 style="text-align: center;">Buy Real and Cheap Tiktok Likes in India</h3>
+        <div class="p-4 "
+            style="background-color: rgb(89, 93, 95); text-align: center; border-radius: 10px; margin-left: 3rem; margin-right: 3rem; color: #f5f5f5;">
+            🏆 Trusted by more than 50,000 Businesses and Influencers| 3M+ Orders, 13M+ Followers, 90M Likes Delivered
+        </div>
+
+        <div style="text-align: center; padding-top: 2rem;">
+            <button style="background-color: rgb(29, 57, 94); border-radius:8px ; color: #f5f5f5;">🙍‍♂️Real
+                Followers</button>
+            <button style="background-color:  rgb(29, 57, 94) ; border-radius:8px ; color: #f5f5f5;">📈 Real
+                Marketing</button>
+            <button style="background-color:  rgb(29, 57, 94); border-radius:5px ; color: #f5f5f5;">🤝24*7
+                Support</button>
+            <button style="background-color:  rgb(29, 57, 94); border-radius:5px ; color: #f5f5f5;">🔄Lifetime
+                Guarantee</button>
+            <button style="background-color:  rgb(29, 57, 94); border-radius:5px ; color: #f5f5f5;">💳Pay
+                Securely</button>
+            <button style="background-color:  rgb(29, 57, 94); border-radius:5px ; color: #f5f5f5;">🔐100%
+                Confidential</button>
+        </div>
+    </div>
+    <!-- tiktok-start -->
+    <div class=" container-fluid pricingTable pt-90">
+        <div class="container">
+
+            <div class="row monthlyPriceList animated">
+                <div class="col-md-4">
+                    <div class="inner holder">
+                        <div class="hdng " style="background-color: #3ea3e7; border-radius: 10px; ">
+                            <p>50 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000; background-color: #5b8cbd; border-radius: 10px;">
+                                50 TikTok Likes for Rs. 70</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner holder active">
+                        <div class="hdng" style="background-color: #3ea3e7;; border-radius: 10px;">
+                            <p>100 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#f5f5f5; background-color: #5b8cbd; border-radius: 10px;">200 TikTok
+                                100 TikTok Likes for Rs. 125</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner holder">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>200 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p
+                                style="color:#f5f5f5; background-color: #5b8cbd; background-color: #5b8cbd; border-radius: 10px;">
+                                100 TikTok
+                                Likes for Rs. 125</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class=" container-fluid pricingTable pt-90">
+        <div class="container">
+
+            <div class="row monthlyPriceList animated">
+                <div class="col-md-4">
+                    <div class="inner holder">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>300 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#f5f5f5;  background-color: #5b8cbd; border-radius: 10px;">300 TikTok
+                                Likes for Rs. 255</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Liikes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner holder active">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>400 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#f5f5f5;  background-color: #5b8cbd; border-radius: 10px;">400 TikTok
+                                Likes for Rs. 385</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner holder">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>500 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#f5f5f5;  background-color: #5b8cbd; border-radius: 10px;">500 TikTok
+                                Likes for Rs. 515</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class=" container-fluid pricingTable pt-90">
+        <div class="container">
+
+            <div class="row monthlyPriceList animated">
+                <div class="col-md-4">
+                    <div class="inner holder">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>600 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000;  background-color: #5b8cbd; border-radius: 10px;">600 TikTok
+                                Likes for Rs. 640</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner holder active">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>700 TikTok Likes </p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000;  background-color: #5b8cbd; border-radius: 10px;">700 TikTok
+                                Followers for Rs. 955</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner holder">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>800 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000;  background-color: #5b8cbd; border-radius: 10px;">800 TikTok
+                                Likes for Rs. 1075</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class=" container-fluid pricingTable pt-90">
+        <div class="container">
+
+            <div class="row monthlyPriceList animated">
+                <div class="col-md-4">
+                    <div class="inner holder">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>900 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000;  background-color: #5b8cbd; border-radius: 10px;">900 TikTok
+                                Likes for Rs. 1190</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner holder active">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>1000 TikTok Likes </p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000; background-color: #5b8cbd; border-radius: 10px;">1000 TikTok
+                                Followers for Rs. 2390</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Views</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner holder">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>2000 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000;  background-color: #5b8cbd; border-radius: 10px;">2000 TikTok
+                                Likes for Rs. 3590</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class=" container-fluid pricingTable pt-90">
+        <div class="container">
+
+            <div class="row monthlyPriceList animated">
+                <div class="col-md-4">
+                    <div class="inner holder">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>4000 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000;  background-color: #5b8cbd; border-radius: 10px;">4000 TikTok
+                                Likes for Rs. 3590</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner holder active">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>6000 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000;  background-color: #5b8cbd; border-radius: 10px;">6000 TikTok
+                                Likes for Rs. 5990</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="inner holder ">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>8000 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000;  background-color: #5b8cbd; border-radius: 10px;">8000 TikTok
+                                Likes for Rs. 6990</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class=" container-fluid pricingTable pt-90">
+        <div class="container">
+
+            <div class="row monthlyPriceList animated">
+                <div class="col-md-4">
+                    <div class="inner holder">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>10000 Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000;  background-color: #5b8cbd; border-radius: 10px;">10000 TikTok
+                                Likes for Rs. 7990</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="inner holder active">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>15000 TikTok Likes</p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000; background-color: #5b8cbd; border-radius: 10px;"> 15000 Tiktok
+                                Likes for Rs. 8990</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Likes</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="inner holder">
+                        <div class="hdng" style="background-color: #3ea3e7; border-radius: 10px;">
+                            <p>20000 Tiktok Likes </p>
+                        </div>
+                        <div class="price mt-2">
+                            <p style="color:#000000;  background-color: #5b8cbd; border-radius: 10px;">20000 Tiktok
+                                Likes for Rs. 1080</p>
+                        </div>
+                        <div class="info">
+                            <p>Premium Likes</p>
+                            <p style="background-color:#f5f5f5;">All Real & Active</p>
+                            <p>100% Safe & Secure</p>
+                            <p style="background-color:#f5f5f5;">Refill Guaranteed</p>
+                            <p>Non-Drop Liies</p>
+                            <p style="background-color:#f5f5f5;">Super Fast Delivery</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" class="readon">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- tiktok-end -->
+
+    <!-- service start -->
+
+    <div class="container overflow-hidden  px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <h3 class="text-center mb-5" style="color: #3ea3e7">How To Place An Order with AlwaysViral.In?:</h3>
+            <div class="row g-5 mx-lg-0">
+
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <p class="mb-4">
+                        <strong style="color: rgb(0, 0, 0);">1.Find a Package:</strong> Choose the ideal package for
+                        your
+                        service that suits your
+                        need from the list of packages. You can use the sorting option for your convenience.
+                    </p>
+                    <p class="mb-4">
+                        <strong style="color: rgb(0, 0, 0);">2. Enter the details:</strong> We never ask for your
+                        password
+                        or any other sensitive data to provide you a service. Just provide the profile or post
+                        information, and billing details to send the services to the right post. You can avail
+                        yourself of additional discounts if you have a coupon code.
+                    </p>
+                    <p class="mb-4">
+                        <strong style="color: rgb(0, 0, 0);">3. Complete the Payment:</strong> Based on the selected
+                        package
+                        and mode of payment you will be redirected to a new page to complete the transaction.
+                    </p>
+                    <p class="mb-4">
+                        <strong style="color: rgb(0, 0, 0);">4. Witness the Growth:</strong> Once your order is
+                        placed, it’s
+                        just a matter of some hours to start reaping the benefits. .
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6 ps-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100"
+                            src="./img/customer-using-mobile-app-tracking-order-delivery_74855-5229.avif"
+                            style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-0">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="mb-5" style="color: #3ea3e7;">Why Should You Buy From AlwaysViral.In?</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp price" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4 text-center">
+
+                            <i class='fas fa-shipping-fast' style='font-size:36px; color:rgb(47, 47, 168)'></i>
+                        </div>
+                        <h4 class="mb-3 text-center"> Fast Delivery:</h4>
+                        <p> Take advantage of our fast delivery features. As soon as you place your order and
+                            complete
+                            the transaction, we will start processing your order. Within a single day, you will
+                            begin to
+                            notice changes. It’s likely that you’ll see benefits in as little as a few hours.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp price" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4 text-center">
+                            <i class="fa fa-star-o" style="font-size:36px; color:rgb(47, 47, 168);"></i>
+                        </div>
+                        <h4 class="mb-3 text-center">No Drop Guarantee:</h4>
+                        <p> The services you purchase from AlwaysViral will be there always and will not be reduced.
+                            Else, we promise that your losses will be replaced within a month of your transaction.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp price" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4 text-center">
+                            <i class="fa fa-rupee" style="font-size:36px;  color:rgb(47, 47, 168);"></i>
+                        </div>
+                        <h4 class="mb-3 text-center"> Refund Guarantee:</h4>
+                        <p> We will credit your money back, the full amount without any squabble, if we fail to
+                            deliver
+                            your order within the promised time period. The time period of each order is mentioned
+                            in
+                            the package. For more info, read our Refund Policy.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp price" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4 text-center">
+                            <i class='fas fa-clock' style='font-size:36px;  color:rgb(47, 47, 168);'></i>
+
+                        </div>
+                        <h4 class="mb-3 text-center"> 24×7 Support:</h4>
+                        <p> We’ll be there for you anytime you need. When you purchase services from AlwaysViral.in,
+                            you
+                            gain access to the support staff, which is available to you 24*7. You can contact us
+                            anytime
+                            at our Live Chat/ WhatsApp Support/ Email Support or raise a support ticket for faster
+                            fixation of issues. We are ready to help you always.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp price" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4 text-center">
+                            <i class="fa fa-cc-visa" style="font-size:36px;  color:rgb(47, 47, 168);"></i>
+
+                        </div>
+                        <h4 class="mb-3 text-center"> Secure Payment:</h4>
+                        <p>The safety of your financial data should be of utmost importance to you. We recognize
+                            this
+                            and have taken full responsibility for the same. This is why we made use of extremely
+                            safe
+                            payment gateways. We accept payments from Credit or Debit cards, Bank transfers, UPI,
+                            and
+                            PayPal. You can also make payments with cryptocurrencies such as Bitcoin.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp price" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4 text-center">
+                            <i class="fa fa-lock" style="font-size:36px;  color:rgb(47, 47, 168);"></i>
+
+                        </div>
+                        <h4 class="mb-3 text-center"> No Password Required:</h4>
+                        <p> The personal identification and details of any person, without a doubt, are extremely
+                            valuable. We are adamant about keeping your confidential information secure always. We
+                            will
+                            never request your passwords or any other sensitive data. We advise you to keep your
+                            account
+                            secure and never disclose your credentials to others.</p>
+                        <!-- <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read
+                                More</span></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-5">
+        <p style="font-weight: 700;" class="text-center"> TikTok is one of the most
+            You can rapidly expand your TikTok reach by using TikTok Likes services. The number of likes you get has
+            a significant impact on your engagement rate. With the help of QQSumo, it’s no longer difficult to get
+            popular on TikTok. Now you can try our TikTok likes service without breaking a sweat! To increase your
+            popularity on the competitive marketplace, Buy TikTok Likes services.
+
+            Many people are trying to stay ahead on the game on TikTok. It is becoming hard to become influencial on
+            Tiktok despite the fact that many people create unique videos. To counter that, you can use the TikTok
+            Likes services to boost your visibility and expand your reach in the competitive scene. Don’t be worried
+            and take advantage of our TikTok Likes services right now!.</p>
+    </div>
+
+
+    <div class="container overflow-hidden  px-lg-0">
+        <div class="container about py-5 px-lg-0">
+
+            <div class="row g-5 mx-lg-0 ">
+
+                <div class="col-lg-6 about-text border p-4 ">
+                    <h5 class="text-center mb-3" style="color: #3ea3e7;">How Does Buying TikTok Likes work on My
+                        Business Account?</h5>
+                    <p class="mb-4 text-dark">
+
+
+                        TikTok Likes are the most popular aspect in the success of a TikTok video. As businesses
+                        focus on marketing in order to get a good response from TikTok viewers, who demand Likes and
+                        Comments.
+                    </p>
+                    <p class="mb-4 text-dark">
+                        Except for the video that contains the beneficial factor to use it, the brand post title and
+                        the popular hashtag mentioned in the video drive the post and grab the attention of the
+                        audience.
+                    </p>
+                    <p class="mb-4 text-dark">
+                        You can evaluate your target audience’s activities and create a video with a buy TikTok
+                        Likes package integrated in it to help your business gain actual followers.
+                        We provide genuine TikTok Likes from authentic TikTok accounts, so you may increase your
+                        brand recognition by gaining more likes for your video.
+                    </p>
+                    <p class="mb-4 text-dark"> So, what are you waiting for? Buy TikTok Likes and start enjoying
+                        the rewards right away. You may also buy TikTok Likes to increase your visibility around the
+                        world.</p>
+
+                </div>
+                <div class="col-lg-6 about-text border  p-4">
+                    <h5 class="text-center mb-3" style="color: #3ea3e7;">Is Getting Likes on TikTok Difficult?
+                    </h5>
+                    <p class="mb-4 text-dark">
+
+
+                        The truth is that getting likes on TikTok is actually difficult, this is why there is a big
+                        approach to gain Likes by buying TikTok Likes. Is it truly effective? Yes, absolutely! If
+                        you Buy TikTok Likes for your videos and the TikTok algorithm ranks your videos, it will
+                        work 100 times more.
+                    </p>
+                    <p class="mb-4 text-dark">
+                        Buy TikTok likes to jumpstart your profile and build a strong reputation on the TikTok
+                        platform, whatever your goals may be. Well, Buying TikTok likes will increase the number of
+                        Views and Followers as incentives as the algorithm pushes your video more into the featured
+                        videos.
+                    </p>
+                    <p class="mb-4 text-dark">
+                        Remember that buying TikTok likes improves your profile’s authenticity and popularity. So,
+                        increase the number of likes and go global.
+                    </p>
+                    <p class="mb-4 text-dark"> A large amount of likes increases your chances of becoming really
+                        popular on TikTok.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2 class="text-center mb-5" style="color: #3ea3e7;">Frequently Asked Questions :</h2>
+        <h3 class="text-center mb-1">Q: If I Buy TikTok Likes from QQSumo, Will my account Get Banned? </h3>
+        <p class="text-center p-4">No! Your TikTok account will never get banned by using our service. Today, millions
+            of people use the TikTok service to expand the reach of their content among users. Furthermore, our service
+            is legitimate and is used by a large number of people from all over the world. For our customers, we always
+            provide services which are 100% safe. So, you could always buy TikTok likes with confidence from QQSumo.</p>
+        <h3 class="text-center mb-1"> Q: Which TikTok Likes Package Should I Choose? </h3>
+        <p class="text-center p-4">The more TikTok Likes you buy from our website, the more popular your TikTok videos
+            become with users. Though, there is no limit to the number of likes you can receive for your videos to go
+            viral, yet we advise that you buy Likes in proportion to the number of views your video has. It does not
+            look real if you have 10,000 Likes in a video that has 2000 views. You can visit our TikTok service page and
+            pick the best options for increasing your video’s organic success. Choose a package that is right for you
+            and matches your video growth.</p>
+        <h3 class="text-center mb-1">Q: Do You Need my TikTok’s Account Password?</h3>
+        <p class="text-center p-4">No, we never ask for your password. Giving your password to someone is risky. We
+            strongly recommend you not to disclose it with anyone.</p>
+        <h3 class="text-center mb-1">Q: What Should I do If I didn’t get my TikTok Likes?</h3>
+        <p class="text-center p-4">We have 24/7 Support system. If you are facing any problem, or you didn’t receive
+            your TikTok likes on your videos, then just let us know. We are always ready to help you. Your TikTok likes
+            will deliver to your videos very soon.</p>
+    </div>
+    <!-- service end -->
+    <!-- card-start -->
+    <div class="container">
+        <div class="container-xxl py-0">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 50
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee "
+                                            style="font-size:16px"></i>75</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 70.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 100
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>130</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 125.00 rs
+                                </p>
+                                <a href="#" class="btn btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 200
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>260</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 255.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 300
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>390</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 385.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 400
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>520</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 515.00 rs
+                                </p>
+                                <a href="#" class="btn btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 500
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>650</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 640.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-xxl py-0">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 600
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee "
+                                            style="font-size:16px"></i>780</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 770.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 700
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>910</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 900.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 800
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>1040</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 1030.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 900
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>1170</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 1160.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 1000
+                                        TikTok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>1299</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 1289.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 2000
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>2499</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 2489.00 rs
+                                </p>
+                                <a href="#" class="btn btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-xxl py-0">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 4000
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee "
+                                            style="font-size:16px"></i>4800</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 4790.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 6000
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>6800</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 6790.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By 8000
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>8800</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 8790.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By
+                                        10000
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>10500</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 10480.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By
+                                        15000
+                                        TikTok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>13500</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 13400.00 rs
+                                </p>
+                                <a href="#" class="btn  btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="./img/Tiktok.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><button type="button" class="btn btn-outline-info"> By
+                                        20000
+                                        Tiktok Likes</button></h5>
+                                <p class="card-text"><i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                    <i class="fa fa-star-o" style="font-size:26px;color: #3810c7;"></i>
+                                </p>
+                                <p> <a href="#" class="btn btn-outline-dark mt-2">sale !</a></p>
+                                <p class="mt-2"><span style="text-decoration: line-through;"> <i class="fa fa-rupee"
+                                            style="font-size:16px"></i>15999</span>&nbsp;&nbsp;
+                                    <i class="fa fa-rupee" style="font-size:16px"></i> 15899.00 rs
+                                </p>
+                                <a href="#" class="btn btn-info mt-2">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- card-end -->
+
+
+    <!-- Footer Start -->
+
+    <div class="container-fluid bg-dark text-light footer  wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+        <div class="container py-5">
+            <div class="row g-5">
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Services</h4>
+                    <a class="btn btn-link" href="">Buy Instagram Followers</a>
+                    <a class="btn btn-link" href="">Buy Instagram Likes </a>
+                    <a class="btn btn-link" href="">Buy Instagram Comments</a>
+                    <a class="btn btn-link" href="">Buy YouTube Views</a>
+                    <a class="btn btn-link" href="">Buy YouTube Subscribers</a>
+                    <a class="btn btn-link" href="">Buy YouTube Likes</a>
+                    <a class="btn btn-link" href="">Buy YouTube Comments</a>
+                    <a class="btn btn-link" href="">Buy YouTube Random Comments</a>
+                    <a class="btn btn-link" href="">Buy Twitter Followers</a>
+                    <a class="btn btn-link" href="">Buy Twitter Likes</a>
+                    <a class="btn btn-link" href="">Buy Twitter Views</a>
+                    <a class="btn btn-link" href="">Buy Twitter Impressions</a>
+                    <a class="btn btn-link" href="">Buy Facebook Followers </a>
+                    <a class="btn btn-link" href="">Buy Facebook Page Likes</a>
+                    <a class="btn btn-link" href="">Buy Facebook Views </a>
+                    <a class="btn btn-link" href="">Buy Linkedin Followers</a>
+                    <a class="btn btn-link" href="">Buy Spotify Followers </a>
+                    <a class="btn btn-link" href="">Buy Spotify Plays </a>
+                    <a class="btn btn-link" href="">Buy Spotify Playlist Plays </a>
+                    <a class="btn btn-link" href="">Buy Spotify Monthly Listeners </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Support</h4>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="">Support Center</a>
+                    <a class="btn btn-link" href="login.html">Login</a>
+                    <a class="btn btn-link" href="register.html">Register</a>
+                    <a class="btn btn-link" href="">FAQ</a>
+                    <a class="btn btn-link" href="">Contact Via Whatsapp</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4"> AlwaysViral.In </h4>
+                    <a class="btn btn-link" href=""> Free Whatsapp Link Generator </a>
+                    <a class="btn btn-link" href="about.html"> About Us </a>
+                    <a class="btn btn-link" href="">Earn 40% From Affiliate Program </a>
+                    <a class="btn btn-link" href="">Terms and Conditions </a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Refund Policy </a>
+                    <a class="btn btn-link" href="">Visit Our Global Alwaysviral.Com Website </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker me-3"></i></i>422, Anpurna Road,Indore</p>
+                    <p class="mb-2"><i class="fa fa-phone me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@AlwaysViral.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">All Images and Contents are Copyright products of
+                            AlwaysViral.in </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

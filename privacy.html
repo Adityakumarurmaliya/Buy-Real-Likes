@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AlwaysViral</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/always.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Add these links in the <head> section of your HTML document -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+   <style>
+      .search{
+    margin-bottom: auto;
+    height: 70px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.search-input{
+
+    color: white;
+    border:0;
+    outline: 0;
+    background: none;
+    width: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+
+}
+
+.search .search-input{
+    padding: 0 10px;
+    width: 250px;
+    caret-color: #000000;
+    font-size: 21px;
+    font-weight: 300;
+    color: black;
+    font-size: 17px;
+    text-transform: capitalize;
+    transition: width 0.4s linear;
+}
+
+.search:hover>.search-icon{
+    background:#6e2323;
+    color:#fff;
+}
+.search-icon{
+
+        height: 50px;
+    width: 50px;
+    float: right;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    background-color: #d20808;
+
+}
+a:link{
+    text-decoration: none;
+}
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top:-6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 
+ul .dropdown-menu .show{
+    display: none;
+}
+
+.price-item:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.price:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.aboutme-section{
+    background-image: url(./img/realme1.png);
+background-repeat: no-repeat;
+background-position: center;
+opacity: 0.;
+}
+@media (min-width: 768px) { 
+    .custom_nav_menu {
+        display: unset !important;
+    }
+
+    .custom_nav_ul {
+        display: unset !important;
+    }
+
+    .custom_nav_ul li {
+        display: inline-block;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    
+
+    <!-- navbar-start -->
+    <div class="container">
+        <!-- Navbar Start -->
+    <nav class="navbar-expand-lg  mt-4 float-start col-lg-12 col-md-12 col-xs-6">
+        <a href="index.html" class="navbar-brand">
+            <img src="./img/WhatsApp_Image_2023-08-24_at_5.48.15_PM-removebg-preview-removebg-preview.png" alt=""  style="width: 200px; height: 100px;">
+        </a>
+        <div class="d-flex justify-content-center h-75 d-none d-md-block float-end">
+            <div class="search">
+                <input type="text" class="search-input" placeholder="search..." name="">
+                <a href="#" class="search-icon">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+        <nav class="navbar-expand-md navbar-expand-lg navbar-light mt-1 float-end">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>Menu
+            </button>
+            <div class="collapse navbar-collapse custom_nav_menu" id="navbarNavDropdown">
+                <ul class="navbar-nav custom_nav_ul">
+                    <li class="nav-item dropdown custom_nav_li">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Facebook </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="facebooklike.html">Buy Facebook Likes</a></li>
+                            <li><a class="dropdown-item" href="facebookfollowers.html">Buy Facebook Followers</a></li>
+                            <li><a class="dropdown-item" href="facebookview.html">Buy Facebook Views</a></li>
+                            <li><a class="dropdown-item" href="facebookpost.html">Buy Facebook Post Like</a></li>
+                            <li><a class="dropdown-item" href="facebookrevie.html">Buy Facebook Page Review</a></li>
+                            <li><a class="dropdown-item" href="facebookcomment.html">Buy Facebook Comments</a></li>
+                            <li><a class="dropdown-item" href="facebookshare.html">Buy Facebook Shares</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Youtube </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="youtubelike.html">Buy Youtube Likes</a></li>
+                            <li><a class="dropdown-item" href="youtubeview.html">Buy Youtube Views</a></li>
+                            <li><a class="dropdown-item" href="youtubesucscribe.html">Buy Youtube Subscribers</a></li>
+                            <li><a class="dropdown-item" href="Youtube Shorts Views.html">Buy Youtube Short Likes</a></li>
+                            <li><a class="dropdown-item" href="Youtube Shorts Views.html">Buy Youtube Short Views</a></li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="YouTube Comments.html">Buy Youtube Comments</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="YouTube Comments.html">Buy Youtube Comments</a></li>
+                                    <li><a class="dropdown-item" href="YouTube Random Comments.html">Buy Youtube Random Comments</a></li>
+                                    <li><a class="dropdown-item" href="Indian YouTube Comments.html">Buy Indian Youtube Comments</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Instagram</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Instagram Likes</a>
+                                <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
+                                    <li  class="dropdown-submenu"><a class="dropdown-item" href="#">Buy Real Instagram Likes</a></li>
+                                    <li  class="dropdown-submenu"><a class="dropdown-item" href="#">Buy IGTV Likes</a></li>
+                                    <li  class="dropdown-submenu"><a class="dropdown-item" href="#">Buy Instagram Likes (INDIAN)</a></li>
+                                    <li  class="dropdown-submenu"><a class="dropdown-item" href="#">Buy Instagram Reel Likes</a></li>
+                                    <li  class="dropdown-submenu"><a class="dropdown-item" href="#">Buy AARAB Instagram Likes</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Instagram Followers</a>
+                                <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="instagramfollowers.html">Buy Real Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Australia Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy ARAB Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Dubai Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Middle East Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Saudi Arabia Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy UAE Instagram Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Italy Instagram Followers</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Instagram Auto Like,<br>Comments,Views</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Auto Likes</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Auto Comments</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Auto Views</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Instagram Real Views</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Instagram  Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Live Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram IGTV Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Reel Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Story Views</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Instagram Comments</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Comments</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy IGTV Comments</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Verified Comments</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Custom Comments (INDIAN)</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Instagram Reel Comments</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Linkedin </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="linkedingfollowers.html">Buy Linkedin Followers</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Linkedin Likes</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Facebook Views</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Linkedin Connections</a></li>
+                            <li><a class="dropdown-item" href="#">Buy LinkedIn Endorsements</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Linkedin Views</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Linkedin Post Shares</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Linkedin Employees</a></li>
+                            <li><a class="dropdown-item" href="#">Buy LinkedIn Comments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pinterest </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="pinterestLikes.html">Buy  Pinterest Likes</a></li>
+                            <li><a class="dropdown-item" href="pinterestFollowers.html">Buy  Pinterest Followers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="TiktokLikes.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Tiktok</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="TiktokLikes.html">Buy Tiktok Likes</a></li>
+                            <li><a class="dropdown-item" href="TiktokFollowers.html">Buy Tiktok  Followers</a></li>
+                            <li><a class="dropdown-item" href="tiktokViews.html">Buy Tiktok  Views</a></li>
+                            <li><a class="dropdown-item" href="TiktokComments.html">Buy Tiktok  Commnets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Twitter </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="twitter-likes.html">Buy Twitter Likes</a></li>
+                            <li><a class="dropdown-item" href="twitter-followers.html">Buy Twitter Followers</a></li>
+                            <li><a class="dropdown-item" href="twitter-views.html">Buy Twitter Views</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Twitter Impression</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Buy Google Reviews </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> More Services </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Twitch</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Twitch Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Twitch Views</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Buy Trust Piolet Reviews</a>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"aria-expanded="false  href="#">Tumblr</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Tumblr Likes</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Tumblr Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Tumblr Reblog</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Spotify</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="shopifyfollowers.html">Buy Spotify Followers</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Spotify Plays</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Spotify Playlist Plays</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Monthly Listners</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Sound Cloud</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Sound Cloud Likes</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Sound cloud Plays</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">MXTAKATAk</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy MX Takatak Likes</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy MX Takatak Followers</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">IMDB</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy IMDB Views</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy IMDB Reviews</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy IMDB Votes</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Club House</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy Club House Room Visitors</a></li>
+                                    <li><a class="dropdown-item" href="#">Buy Club House Club Followers</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vimeo </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Buy Vimeo Likes</a></li>
+                            <li><a class="dropdown-item" href="VimeoLikes.html">Buy Vimeo Followers</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Vimeo Views</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Account</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="login.html">Log In</a></li>
+                            <li><a class="dropdown-item" href="register.html">Sign Up</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>    
+    <!-- navbar-end -->
+
+        <!-- section start -->
+
+        <div class=" container-lg mt-4 mb-5 " style="align-items: center;">
+            <h1 class="pb-2" style=" text-align: center; border-bottom: 4px solid rgb(207, 62, 62);">Privacy Policy</h1>
+        </div>
+    
+        <div class="container-lg mt-4 pb-4" style="background-color:#f5f5f5;">
+            <div class="pt-4 pb-4" style="text-align: center; ">
+                <h2 style="color:  rgb(207, 62, 62);">Who we are</h2>
+            </div>
+    
+            <div class="container-md">
+                <h5>Our website address is: https://alwaysviral.in.</h5>
+                <h2>AlwaysViral.In passionately believes in consumer confidentiality</h2>
+                <p>1.–All information gathered is kept strictly confidential and is never sold or shared to other service providers or advertising.</p>
+                <p>2.–Personal information or any other information you supply is used solely for the purpose of completing your service and is not shared with any third party.</p>
+                <p>3.–We need to verify your identity credentials before making the necessary modifications to preserve your privacy and personal information.</p>
+                <p>4.Please open a ticket at alwaysviral.com/contact if you have any questions about this process.</p>
+            </div>
+        </div>
+    
+    
+        <div class="container-lg mt-4 pb-4 " style="background-color:#f5f5f5;">
+            <div class="pt-4 pb-4" style="text-align: center;">
+                <h2 style="color:  rgb(207, 62, 62);">Comments</h2>
+            </div>
+    
+            <div class="container-md">
+                <p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address and browser user agent string to help spam detection.
+
+                    An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it.</p>
+            </div>
+        </div>
+    
+        <div class="container-lg mt-4 pb-4 " style="background-color:#f5f5f5;">
+            <div class="pt-4 pb-4" style="text-align: center;">
+                <h2 style="color:  rgb(207, 62, 62);">Media</h2>
+            </div>
+    
+            <div class="container-md">
+                <p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p>
+            </div>
+        </div>
+
+        <div class="container-lg mt-4 pb-4 " style="background-color:#f5f5f5;">
+            <div class="pt-4 pb-4" style="text-align: center;">
+                <h2 style="color:  rgb(207, 62, 62);">Cookies</h2>
+            </div>
+    
+            <div class="container-md">
+                <p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.
+
+                    If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.
+                    
+                    When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select “Remember Me”, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.
+                    
+                    If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day</p>
+            </div>
+        </div>
+
+        <div class="container-lg mt-4 pb-4 " style="background-color:#f5f5f5;">
+            <div class="pt-4 pb-4" style="text-align: center;">
+                <h2 style="color:  rgb(207, 62, 62);">Embedded content from other websites</h2>
+            </div>
+    
+            <div class="container-md">
+                <p> Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.
+
+                    These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p>
+            </div>
+        </div>
+
+        <div class="container-lg mt-4 pb-4 " style="background-color:#f5f5f5;">
+            <div class="pt-4 pb-4" style="text-align: center;">
+                <h2 style="color:  rgb(207, 62, 62);">Who we share your data with</h2>
+            </div>
+    
+            <div class="container-md">
+                <p>
+
+                    If you request a password reset, your IP address will be included in the reset email</p>
+            </div>
+        </div>
+
+        <div class="container-lg mt-4 pb-4 " style="background-color:#f5f5f5;">
+            <div class="pt-4 pb-4" style="text-align: center;">
+                <h2 style="color:  rgb(207, 62, 62);">How long we retain your data</h2>
+            </div>
+    
+            <div class="container-md">
+                <p>
+
+                    If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.
+
+                    For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p>
+            </div>
+        </div>
+
+        <div class="container-lg mt-4 pb-4 " style="background-color:#f5f5f5;">
+            <div class="pt-4 pb-4" style="text-align: center;">
+                <h2 style="color:  rgb(207, 62, 62);">What rights you have over your data</h2>
+            </div>
+    
+            <div class="container-md">
+                <p>
+
+                    If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes</p>
+            </div>
+        </div>
+
+        <div class="container-lg mt-4 pb-4 " style="background-color:#f5f5f5;">
+            <div class="pt-4 pb-4" style="text-align: center;">
+                <h2 style="color:  rgb(207, 62, 62);">Where we send your data</h2>
+            </div>
+    
+            <div class="container-md">
+                <p>
+
+                    Visitor comments may be checked through an automated spam detection service.</p>
+            </div>
+        </div>
+    
+    
+        <!-- section end -->
+    
+  <!-- Testimonial Start -->
+
+  <div class="container-xxl wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="text-center">
+            <h6 class="text-secondary text-uppercase">Testimonial</h6>
+            <h1 class="mb-0">Read Our Recent Reviews From Customers </h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="img/test1.jpg"
+                        style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1"> Mercedes May</h5>
+                        <p class="m-0">Profession</p>
+                    </div>
+                </div>
+                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                    Clita erat ipsum et lorem et sit.</p>
+            </div>
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="img/test2.jpg"
+                        style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Nelson Mullins</h5>
+                        <p class="m-0">Profession</p>
+                    </div>
+                </div>
+                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                    Clita erat ipsum et lorem et sit.</p>
+            </div>
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="img/test3.jpg"
+                        style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Mark Daly</h5>
+                        <p class="m-0">Profession</p>
+                    </div>
+                </div>
+                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                    Clita erat ipsum et lorem et sit.</p>
+            </div>
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="img/test4.jpg"
+                        style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Richa Dwivedi</h5>
+                        <p class="m-0">Profession</p>
+                    </div>
+                </div>
+                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                    Clita erat ipsum et lorem et sit.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonial End -->
+
+        <!-- Footer Start -->
+    
+        <div class="container-fluid bg-dark text-light footer  wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+            <div class="container py-5">
+                <div class="row g-5">
+    
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Services</h4>
+                        <a class="btn btn-link" href="instagram.html">Buy Instagram Followers</a>
+                        <a class="btn btn-link" href="instagram.html">Buy Instagram Likes </a>
+                        <a class="btn btn-link" href="instagram.html">Buy Instagram Comments</a>
+                        <a class="btn btn-link" href="youtube.html">Buy YouTube Views</a>
+                        <a class="btn btn-link" href="youtube.html">Buy YouTube Subscribers</a>
+                        <a class="btn btn-link" href="youtube.html">Buy YouTube Likes</a>
+                        <a class="btn btn-link" href="youtube.html">Buy YouTube Comments</a>
+                        <a class="btn btn-link" href="youtube.html">Buy YouTube Random Comments</a>
+                        <a class="btn btn-link" href="">Buy Twitter Followers</a>
+                        <a class="btn btn-link" href="">Buy Twitter Likes</a>
+                        <a class="btn btn-link" href="">Buy Twitter Views</a>
+                        <a class="btn btn-link" href="">Buy Twitter Impressions</a>
+                        <a class="btn btn-link" href="facebook.html">Buy Facebook Followers </a>
+                        <a class="btn btn-link" href="facebook.html">Buy Facebook Page Likes</a>
+                        <a class="btn btn-link" href="facebook.html">Buy Facebook Views </a>
+                        <a class="btn btn-link" href="linkeding.html">Buy Linkedin Followers</a>
+                        <a class="btn btn-link" href="shopify.html">Buy Spotify Followers </a>
+                        <a class="btn btn-link" href="shopify.html">Buy Spotify Plays </a>
+                        <a class="btn btn-link" href="shopify.html">Buy Spotify Playlist Plays </a>
+                        <a class="btn btn-link" href="shopify.html">Buy Spotify Monthly Listeners </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Support</h4>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="">Support Center</a>
+                        <a class="btn btn-link" href="login.html">Login</a>
+                        <a class="btn btn-link" href="register.html">Register</a>
+                        <a class="btn btn-link" href="">FAQ</a>
+                        <a class="btn btn-link" href="">Contact Via Whatsapp</a>
+    
+                        <h4 class="text-light mt-5 mb-4"> Policy </h4>
+                        <a class="btn btn-link" href="TermsCondition.html"> Terms & Conditions </a>
+                        <a class="btn btn-link" href="ShipingReturn.html">Shipping & Returns  </a>
+                        <a class="btn btn-link" href="#payment">Payment Methods </a>
+                        <a class="btn btn-link" href="Faq.html">FAQ </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4"> AlwaysViral.In </h4>
+                        <a class="btn btn-link" href=""> Free Whatsapp Link Generator </a>
+                        <a class="btn btn-link" href="about.html"> About Us </a>
+                        <a class="btn btn-link" href="">Earn 40% From Affiliate Program </a>
+                        <a class="btn btn-link" href="">Terms and Conditions </a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Refund Policy </a>
+                        <a class="btn btn-link" href="">Visit Our Global Alwaysviral.Com Website </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Address</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker me-3" ></i></i>422, Anpurna Road,Indore</p>
+                        <p class="mb-2"><i class="fa fa-phone me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@AlwaysViral.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-lg-12 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">All Images and Contents are Copyright products of
+                                AlwaysViral.in </a>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <!-- Footer End -->
+    
+    
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+    
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+    
+    </html>
